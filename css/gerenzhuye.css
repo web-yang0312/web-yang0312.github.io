@@ -1,4 +1,4 @@
-body,h1,h2,h3,input,img,p,li,ul{
+body,h1,h2,h3,h4,input,img,p,li,ul{
 	margin: 0;
 	padding: 0;
 	color:#888888;
@@ -9,6 +9,14 @@ body,h1,h2,h3,input,img,p,li,ul{
 a{
 	text-decoration: none;
 	color: #888888;
+}
+::selection{
+   background: #e74c3c;
+   color: #fff;
+}
+::-moz-selection{
+   background: #e74c3c;
+   color: #fff;
 }
 #shouye{
 	width: 100%;
@@ -62,14 +70,14 @@ a{
 	width: 100%;
 	height:auto;
 	background: #f2f2f2;
-	transform-origin: right top;
+	/*transform-origin: right top;*/
 	transition: all 1s linear;
 	position: absolute;
 	top:0;
 	right:0;
 	transform: scale(0);
-	background-size: cover;
-	background: url(../img/project_papper.png)fixed;
+	background: url(../img/pattern-wood.png) repeat fixed;
+    background-position: center center;
 }
 .fixed .banner{
 	width:100% ;
@@ -91,25 +99,6 @@ a{
 	width: 5%;
 	position: absolute;
 }
-.fixed .fixed-content .jiao img{
-	width:100%
-}
-.fixed .fixed-content  .jiao1{
-	top:10%;
-	left:10%;
-}
-.fixed  .fixed-content .jiao2{
-	bottom:10%;
-	left:10%;
-}
-.fixed  .fixed-content .jiao3{
-	top:10%;
-	right:10%;
-}
-.fixed  .fixed-content .jiao4{
-	bottom:10%;
-	right:10%;
-}
 .fixed  .fixed-content .container{
 	position: absolute;
 	top:50%;
@@ -119,7 +108,6 @@ a{
 	margin-top: -81px;
 	margin-left: -490px;
 	text-align: center;
-	
 }
  .fixed-content .container .row{
     width: 100%;
@@ -185,6 +173,7 @@ a{
     box-sizing: border-box;
     margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .fixed .section1 .menu{
 	margin: 0;
@@ -198,14 +187,25 @@ a{
 	border-bottom: 0px;
 	border-radius: 4px 4px 0 0;
 	margin-right: 10px;
-	
 }
 .section1 .menu .nav>a{
-	padding: 10px 40px 10px 40px;
+	padding: 10px 40px ;
 	font-size: 14px;
 	color: #888;
 	display: block;
 	font-weight: bold;
+}
+.fixed .section1 .menu .active3{ 
+    background: #fff;
+    position: relative;
+    top: 1px;
+    border-color: #f1f1f1;
+    border-bottom: none;
+}
+.fixed .section1 .menu .active3 a{ 
+    padding-top:18px;
+	font-size: 14px;
+	color: #E74C3C;
 }
 .fixed .section1 .menu-lis{
 	padding: 30px 20px;
@@ -214,13 +214,12 @@ a{
 	box-shadow: 0px 6px #c0392b;
 	border-radius: 0px 0px 4px 4px;
 }
-#about{
-	display: block;
-	transform: scale(0);
-	transition: all 0.5s linear 0.3s;
-}
-.active2{
-	transform: scale(1);
+.section1 .menu-lis .nav-lis{
+	display: none;
+	position: static;
+	visibility: visible;
+	transition: all 1s linear;
+	height: 0;
 }
 #about .container{
 	width: 978px;
@@ -230,49 +229,232 @@ a{
 	font: 20px "Microsoft Yahei";
 	color: #000;
 	padding-bottom: 20px;
-	border-bottom: 1px dashed #ccc;
 }
 #about h1 span{
 	margin-left: 20px;
 }
-#about .row{
-	margin-top: 30px;
+#about .row .photo{
+	float: left;
+	height: 100%;
+	width: 200px;
+	margin-right: 20px;
+	overflow: hidden;
+	border: 1px solid #F1F1F1;
+	padding: 3px;
 }
-#about .about{
-	width: 100%;
-	height: 211px;
-    position: relative;
-    text-align: center;
+#about .row .photo .touxiang{
 }
-#about .about img{
-	vertical-align: center;
+#about .row .about2{
+	
 }
-#about .about h4{
+#about .row .about2 li{
+	border-bottom: 1px solid #F1F1F1;
+    padding: 10px 0;
+}
+#about .row .about2 li a{
+	font-size: 14px;
+	color: #E74C3C;
+}
+#about .row h4{
 	font-size: 18px;
-	margin-top: 10px;
-	margin-bottom: 10px;
 	font-weight: 500;
 	height: 20px;
 	line-height: 20px;
+	margin-bottom: 14px;
 	color:#5F5F5F;
 }
-#about .about p{
-	font-size: 12px;
+#about .row p{
+	font-size: 14px;
+    margin-bottom: 21px;
+}
+#about .row h2{
+	letter-spacing: 2px;
+	margin-bottom: 14px;
+	font-size: 30px;
+}
+#about .contact-info{
+	margin-top: 10px;
+} 
+#about .contact-info .contact-box{
+	padding: 6px 6px 6px 10px;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+#about .contact-info .contact-box i{
+	display: block;
+	height:46px;
+	width:46px;
+	float:left;
+}
+#about .contact-info .contact-box h3{
+	display: block;
+	height:30px;
+	line-height: 30px;
+	float:left;
+    color: #E74C3C;
+    font-size:15px;
+    font-weight: 400;
+    margin-top:10px;
+    margin-left: 10px;
+}
+#about .contact-info .col-lg-4:nth-child(1) .contact-box i{
+	background: url(../img/nianling.png);
+	background-size: cover;
+}
+#about .contact-info .col-lg-4:nth-child(2) .contact-box i{
+	background: url(../img/lizhi.png);
+	background-size: cover;
+}
+#about .contact-info .col-lg-4:nth-child(3) .contact-box i{
+	background: url(../img/youxiang.png);
+	background-size: cover;
+}
+.section1 .menu-lis .active2{
+	display: block;
+	height: 100%;
+	position: static;
+	visibility: visible;
+}
+#resume{
+	
+}
+#resume .turn{
+	margin:10px auto;
+	position: relative;
+	overflow: hidden;
+	height:280px;
+}
+#resume .turn .turn-list{
+	position: absolute;
+	top:0;
+	left:100%;
+	height:210px;
+	width: 100%;
+	background: #FFFFFF;
+	background: url(../img/alternative_light.png);
+}
+#resume .turn .circle{
+	position: absolute;
+	right:0;
+	left:0;
+	margin: auto;
+	bottom: 25px;
+	height: 15px;
+	width: 50px;
+}
+#resume .turn .circle .cir{
+	width: 10px;
+	height:10px;
+	border-radius: 50%;
+	background: #ccc;
+	float: left;
+	margin-right: 5px;
+}
+#resume .turn .circle .cir-first{
+	background: #C0392B;
+}
+#resume .turn .turn-list-first{
+	left:0;
+}
+#resume .turn .turn-list:nth-child(1) .img2{
+	width: 35%;
+	height:100%;
+	float:left;
+	background: url(../img/index2.jpg);
+    background-size: cover;
+	margin: 0 40px;
+}
+#resume .turn .turn-list:nth-child(2) .img2{
+	width: 35%;
+	height:100%;
+	float:left;
+	background: url(../img/shouji.jpg);
+    background-size: cover;
+	margin: 0 40px;
+}
+#resume .turn .turn-list:nth-child(3) .img2{
+	width: 35%;
+	height:100%;
+	float:left;
+	background: url(../img/bg7.jpg);
+    background-size: cover;
+	margin: 0 40px;
+}
+#resume .turn .turn-list .xiangxi{
+	float: left;
+}
+#resume .turn .turn-list h2{
+	margin-top: 30px;
+	font-size: color: #333;
+	font-size: 20px;
+	font-weight: normal;
+	padding-bottom: 25px;;
+	font-weight: 900;
+}
+#resume .turn .turn-list h3{
+	font-size: color: #666;
+	font-size: 15px;
+	font-weight: normal;
+	padding-bottom: 25px;;
+}
+#port .col-lg-4{
+	padding: 15px;
+}
+#port .row li{
+	height: 300px;
+	width: 100%;
+	background: url(../img/back3.jpg) no-repeat;
+}
+#port .row li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(231, 76, 60,.6);
 	text-align: center;
-	margin: 0 0 10px;
-	color: #5F5F5F;
+	position: relative;
+	opacity: 0;
+	transform: rotateY(180deg);
+	transition: all 450ms ease-out 0s;
 }
-.dividing{
-	background: transparent url(../img/check_strip.png) repeat-x 0px -15px;
-    height: 83px;
+#port .row li:hover a{
+	opacity: 1;
+	transform: rotateY(0deg);
 }
-.fouce{
+#port .row li a div{
+	width: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	right:0;
+	margin: auto;
+	height: 100px;
+}
+#port .row li a p h3{
+	width: 100%;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 10px 0;
+}
+#port .row li a p h2{
+	width: 100%;
+	height: 20px;
+	font-size: 25px;
+	line-height: 20px;
+	color: #FFFFFF;
+	text-align: center;
+}
+#contact .fouce{
 	width: 960px;
 	margin: 0 auto;
 	padding: 0px 0px;
 	line-height: 20px;
 }
-.fouce .fouce1{
+#contact .fouce .fouce1{
 	background: url(../img/slider.png) no-repeat;
 	width: 660px;
 	height: 289px;
@@ -283,16 +465,17 @@ a{
 	margin-top:50px;
 	text-align: center;
 }
-.fouce .fouce1 h3{
+#contact .fouce .fouce1 h3{
 	margin-top:50px;
 	height: 30px;
 	color: #5F5F5F;
 	text-align: center;
 	font-size: 25px;
 }
-.fouce .fouce1 p{
+#contact .fouce .fouce1 p{
 	color: #5F5F5F;
 	text-align: center;
 	font-size: 18x;
 	margin: 0 0 10px;
 }
+
