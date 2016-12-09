@@ -1,0 +1,1129 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-style: normal;
+  font-weight: normal;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#filters li span {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#filters li span.active {
+  background: #fed136;
+  color: #fff;
+}
+
+dl, menu, ol, ul {
+  margin: 0;
+}
+
+h2, h4 {
+  margin: 0;
+}
+
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 15px;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: url(../img/bg_body.png) left top repeat-x #f0f0f0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+.text-title {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+#top {
+  padding: 0.2rem 0;
+  border: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1.2rem;
+  z-index: 20;
+  right: 0;
+}
+
+#top .container1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#top .container1 .caidan {
+  width: 0.6rem;
+  height: 0.6rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.5rem;
+  background: url(../img/menu.png);
+  background-size: cover;
+}
+
+#top .container1 .nav2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  float: right;
+  overflow: hidden;
+  background: #000000;
+  transform: scaleY(0);
+  transform-origin: top left;
+  transition: all 0.5s ease-out;
+}
+
+#top .container1 .nav2 li {
+  width: 100%;
+  float: left;
+  position: relative;
+  display: block;
+  height: 1rem;
+  background: #000000;
+}
+
+#top .container1 .nav2 li a {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 0.15rem;
+  height: 100%;
+  display: block;
+  line-height: 0.5rem;
+}
+
+#top .container1 .nav2 .active {
+  border-radius: 3px;
+  background: #fed136;
+  transition: all 0.5s linear;
+}
+
+#top .container1 .active1 {
+  transform: scaleY(1);
+}
+
+#home {
+  background-origin: content-box;
+  position: relative;
+}
+
+#home .kong {
+  position: absolute;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+  top: 1.5rem;
+  z-index: 30;
+  background: url(../img/bg2.jpg) repeat;
+}
+
+#home .kong .content {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#home .kong .content .nav3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+
+#home .kong .content .nav3 li {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  float: left;
+}
+
+#home .kong .content .nav3 li a {
+  float: left;
+  display: block;
+  width: 120px;
+  height: 60px;
+  font-size: 14px;
+  padding: 60px 0;
+  color: #666;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  background: url(../img/light.png) top center no-repeat;
+}
+
+#home .kong .content .nav3 li a:hover {
+  color: #fff;
+  background: url(../img/Lhover1.png) top center no-repeat;
+}
+
+#home .kong .content .nav3 .active a {
+  color: #fff;
+  background: url(../img/Lhover1.png) top center no-repeat;
+}
+
+#home .down {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-shadow: none;
+  bottom: 0.1rem;
+  border-radius: 0.1rem;
+  color: #e2e2e2;
+  box-shadow: -0.15rem 0.30rem 0.7rem #c2c2c2;
+  border: 0.01rem solid #eee;
+  animation: tiao 1s linear 0.5s infinite alternate;
+}
+
+#home .down i {
+  display: block;
+  width: 0.3rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  margin-top: 0.1rem;
+  background: url(../img/down.png);
+  background-size: cover;
+}
+
+#home .photo {
+  width: 3rem;
+  height: 3rem;
+  border: 0.01rem solid #000000;
+  border-radius: 50%;
+  top: 4rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url(../img/1.jpg);
+  background-size: cover;
+}
+
+#home .banner {
+  position: absolute;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 100;
+  top: 3.5rem;
+  padding: 25px 60px;
+  width: 1020px;
+}
+
+#home .banner .banner-con {
+  width: 900px;
+  height: 390px;
+  padding-top: 1.5rem;
+  background: url(../img/box.png) no-repeat center;
+  background-size: cover;
+}
+
+#about .about-con {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#about .about-con .about-til {
+  margin-top: 1.1rem;
+}
+
+#about .about-con .about-til h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  color: #fed136;
+}
+
+#about .about-con .about-til hr.line2 {
+  margin: 0.15rem auto;
+  padding: 0;
+  max-width: 1.5rem;
+  border: 0;
+  border-top: solid 0.08rem;
+  text-align: center;
+  color: #fed136;
+}
+
+#about .about-con .xinxi {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  transform: translateX(-200%);
+  box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-out;
+}
+
+#about .about-con .xinxi li {
+  height: 3.5rem;
+  padding-top: 0.8rem;
+  margin-left: -5px;
+}
+
+#about .about-con .xinxi li div {
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.3rem 0;
+  position: relative;
+  border-radius: 50%;
+}
+
+#about .about-con .xinxi li div i {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0 auto;
+  display: block;
+  background: #F0AD4E;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+#about .about-con .xinxi li div strong {
+  font-size: 0.3rem;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  line-height: 2rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.5s ease-out;
+}
+
+#about .about-con .xinxi li div:hover strong {
+  transform: scale(1);
+}
+
+#about .about-con .xinxi li .active3 .strong {
+  transform: scale(1);
+}
+
+#about .about-con .xinxi li:nth-child(1) i {
+  background: url(../img/age.png);
+  background-size: cover;
+}
+
+#about .about-con .xinxi li:nth-child(2) i {
+  background: url(../img/education.png);
+  background-size: cover;
+}
+
+#about .about-con .xinxi li:nth-child(3) i {
+  background: url(../img/location.png);
+  background-size: cover;
+}
+
+#about .about-con .xinxi li:nth-child(4) i {
+  background: url(../img/status.png);
+  background-size: cover;
+}
+
+#about .about-con .ziwo {
+  width: 80%;
+  height: 3rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+#about .about-con .ziwo h4 {
+  font-size: 20px;
+  color: #666666;
+  font-weight: 400;
+}
+
+#about .about-con .ziwo2 {
+  width: 80%;
+  text-align: left;
+  line-height: 30px;
+  height: 3rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+#about .about-con .ziwo2 h4 {
+  font-size: 20px;
+  color: #666666;
+  font-weight: 400;
+}
+
+#about .about-con .active4 {
+  transform: translateX(0);
+}
+
+#skill .skill-con {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#skill .skill-con .skill-til {
+  margin-top: 1.1rem;
+}
+
+#skill .skill-con .skill-til h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  color: #fed136;
+}
+
+#skill .skill-con .skill-til hr.line2 {
+  margin: 0.15rem auto;
+  padding: 0;
+  max-width: 1.5rem;
+  border: 0;
+  border-top: solid 0.08rem;
+  text-align: center;
+  color: #fed136;
+}
+
+#skill .skill-con .diannao {
+  z-index: 200;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 417px;
+  height: 305px;
+  top: 200px;
+  background: url(../img/diannao.png);
+}
+
+#skill .skill-con .diannao .lunbo {
+  top: 16px;
+  position: absolute;
+  z-index: 1;
+  left: 34px;
+  width: 349px;
+  height: 197px;
+}
+
+#skill .skill-con .diannao .lunbo .bo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-out;
+  opacity: 0;
+}
+
+#skill .skill-con .diannao .lunbo .bo .content1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  color: #666666;
+  transition: all .5s ease-out;
+  opacity: 0;
+}
+
+#skill .skill-con .diannao .lunbo .bo .content1 .lun-list {
+  width: 33.333333333%;
+  height: 100%;
+  float: left;
+  background-size: cover;
+  position: relative;
+}
+
+#skill .skill-con .diannao .lunbo .bo .content1 .lun-list a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 76%;
+  height: 50%;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+}
+
+#skill .skill-con .diannao .lunbo .bo .content1 .lun-list a:hover {
+  transform: scale(1.1);
+}
+
+#skill .skill-con .diannao .lunbo .bo .con1 {
+  transform: translateY(100px);
+}
+
+#skill .skill-con .diannao .lunbo .bo .con2 {
+  transform: translateY(-100px);
+}
+
+#skill .skill-con .diannao .lunbo .bo .con3 {
+  transform: translatex(-100px);
+}
+
+#skill .skill-con .diannao .lunbo .bo .active6 {
+  transform: translateY(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#skill .skill-con .diannao .lunbo .active5 {
+  opacity: 1;
+}
+
+#skill .skill-con .diannao .gaoguang {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0px;
+  width: 379px;
+  height: 225px;
+}
+
+#skill .skill-con .diannao .diannao1 {
+  position: absolute;
+  z-index: 2;
+  right: 19px;
+  top: 0px;
+  width: 3.05rem;
+  height: 4.17rem;
+}
+
+#skill .skill-con .muban {
+  width: 934px;
+  height: 84px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url(../img/bg_geban.png) no-repeat;
+  top: 470px;
+}
+
+#portfolio .por-con {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#portfolio .por-con .por-til {
+  margin-top: 1.1rem;
+}
+
+#portfolio .por-con .por-til h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  color: #fed136;
+}
+
+#portfolio .por-con .por-til hr.line2 {
+  margin: 0.15rem auto;
+  padding: 0;
+  max-width: 1.5rem;
+  border: 0;
+  border-top: solid 0.08rem;
+  text-align: center;
+  color: #fed136;
+}
+
+#portfolio .por-con .pc {
+  margin-top: 0.5rem;
+}
+
+#portfolio .por-con .pc li {
+  margin-top: 0.5rem;
+}
+
+#portfolio .por-con .pc li .trans {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+#portfolio .por-con .pc li .trans .pic {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#portfolio .por-con .pc li .trans .pic a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  line-height: 3.5rem;
+  transform: scale(0) rotate(360deg);
+  transition: all 0.5s ease-out;
+}
+
+#portfolio .por-con .pc li .trans .pic:hover a {
+  transform: scale(1) rotate(0);
+}
+
+#portfolio .por-con .pc li:nth-child(1) .trans {
+  background-image: url(../img/tongren.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#portfolio .por-con .pc li:nth-child(2) .trans {
+  background-image: url(../img/gongsi.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#portfolio .por-con .pc li:nth-child(3) .trans {
+  background-image: url(../img/book.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#portfolio .por-con h3 {
+  color: #666666;
+  font-size: 30px;
+  width: 50%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 120px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#portfolio .por-con .move {
+  width: 3rem;
+  height: 1rem;
+  margin: auto;
+  background: #fed136;
+  position: absolute;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0.5rem;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#portfolio .por-con .move a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+}
+
+#more .more-con {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#more .portfolio {
+  background: #F4F4F4;
+}
+
+#more .portfolioContainer {
+  padding: 20px;
+}
+
+#more .portfolio .portfolio-item {
+  opacity: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+#more .portfolio-item:nth-child(1) {
+  height: 5rem;
+  background: url(../img/portfolio-thumb-1.jpg);
+  background-size: cover;
+}
+
+#more .portfolio-item:nth-child(2) {
+  height: 5rem;
+  background: url(../img/portfolio-thumb-2.jpg);
+  background-size: cover;
+}
+
+#more .portfolio-item:nth-child(3) {
+  height: 5rem;
+  background: url(../img/portfolio-thumb-3.jpg);
+  background-size: cover;
+}
+
+#more .portfolio-item:nth-child(4) {
+  height: 5rem;
+  background: url(../img/portfolio-thumb-4.jpg);
+  background-size: cover;
+}
+
+#more .portfolio-item:nth-child(5) {
+  height: 5rem;
+  background: url(../img/portfolio-thumb-5.jpg);
+  background-size: cover;
+}
+
+#more .portfolio-item:nth-child(6) {
+  height: 5rem;
+  background: url(../img/portfolio-thumb-6.jpg);
+  background-size: cover;
+}
+
+#more .popup {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#more .portfolio .portfolio-item img {
+  width: 100%;
+  height: auto;
+}
+
+#more .portfolioFilter {
+  font-weight: 400;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+#more .portfolioFilter li {
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  display: inline;
+  cursor: pointer;
+  border: 1px solid;
+  padding: 5px 10px;
+  line-height: 45px;
+}
+
+#more .portfolioFilter li.active {
+  background: #fed136 none repeat scroll 0 0;
+  border: 1px solid #fed136;
+  color: #fff;
+}
+
+#more .portfolio-item {
+  position: relative;
+  color: #ffffff;
+  line-height: 0;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#more .project-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0);
+  background: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-transform: uppercase;
+  visibility: visible;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#more .portfolio-item a:hover > .project-hover {
+  color: white;
+  cursor: crosshair;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#more .project-hover span {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#more .portfolio-item a:hover > .project-hover span {
+  padding: 15px 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+#more .project-hover b {
+  color: rgba(255, 255, 255, 0);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-transform: none;
+  padding-top: 0;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#more .project-hover span.plus {
+  font-size: 120px;
+  font-weight: 100;
+}
+
+#more .portfolio-item a:hover > .project-hover b {
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#contact .con-con {
+  width: 80%;
+  height: 100%;
+}
+
+#contact .con-con .con-til {
+  overflow: hidden;
+  margin-top: 1.1rem;
+}
+
+#contact .con-con .con-til h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  color: #fed136;
+}
+
+#contact .con-con .con-til hr.line2 {
+  margin: 0.15rem auto;
+  padding: 0;
+  max-width: 1.5rem;
+  border: 0;
+  border-top: solid 0.08rem;
+  text-align: center;
+  color: #fed136;
+}
+
+#contact .con-con .com {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  width: 5rem;
+  border-radius: 3px;
+  animation: move 5s linear 0.5s infinite alternate;
+}
+
+#contact .con-con .call {
+  width: 3rem;
+  height: 1.2rem;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+#contact .con-con .call .callBtn {
+  width: 100%;
+  height: 1.2rem;
+  border-radius: 8px;
+  background: #fed136;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  left: 0px;
+  bottom: 0px;
+  text-align: center;
+  line-height: 1.2rem;
+  color: #fff;
+  animation: left 1.8s linear 0s infinite both;
+  cursor: pointer;
+  display: block;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 3.8s ease;
+}
+
+#contact .con-con .call .callBtn.active {
+  opacity: 0.8;
+}
+
+#contact .con-con .call .qq, #contact .con-con .call .wx, #contact .con-con .call .yx {
+  width: 60px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  transform: translate3d(-60px, -60px, 0);
+  background: url(../img/qq.png) no-repeat center center/60px 60px;
+  transition: transform .8s ease .3s;
+}
+
+#contact .con-con .call .qq.active, #contact .con-con .call .wx.active, #contact .con-con .call .yx.active {
+  transform: translate3d(50px, 0, 0);
+}
+
+#contact .con-con .call .yx {
+  background: url(../img/yx.png) no-repeat center center/60px 60px;
+  transition: transform .8s ease .5s;
+  transform: translate3d(60px, -90px, 0);
+}
+
+#contact .con-con .call .wx {
+  background: url(../img/wx.png) no-repeat center center/60px 60px;
+  transform: translate3d(180px, -60px, 0);
+  transition: transform .8s ease .7s;
+}
+
+@keyframes move1 {
+  0 {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes move {
+  0 {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(400px, 100px);
+  }
+  100% {
+    transform: translate(800px, 0px);
+  }
+}
+
+@keyframes tiao {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-0.2rem);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #contact .con-con {
+    width: 100%;
+  }
+  #contact .con-con .com {
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    width: 5rem;
+    border-radius: 3px;
+    animation: move1 5s linear 0.5s infinite alternate;
+  }
+  #top .container {
+    display: none;
+  }
+  #home h3 {
+    font-size: 0.5rem;
+    margin-top: 4rem;
+  }
+  #home p {
+    font-size: 0.5rem;
+  }
+  #home .kong {
+    display: none;
+  }
+  #top {
+    display: block;
+    background: #000000;
+  }
+  #home .banner {
+    display: none;
+  }
+  #about .about-con {
+    width: 95%;
+  }
+  #skill .skill-con {
+    width: 95%;
+  }
+  #portfolio .por-con {
+    width: 95%;
+  }
+  #skill .skill-con .diannao {
+    margin-left: -5px;
+    margin-top: 50px;
+    width: 370px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #skill .skill-con .diannao .lunbo {
+    top: 14px;
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    width: 310px;
+    height: 175px;
+  }
+  #skill .skill-con .muban {
+    width: 384px;
+    height: 84px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url(../img/bg_geban.png) no-repeat;
+    top: 453px;
+    background-size: contain;
+    margin-top: 50px;
+  }
+  #portfolio .por-con .pc li .trans {
+    height: 2.8rem;
+    width: 2.8rem;
+    margin: 0 auto;
+    border: 1px solid #999999;
+  }
+  #portfolio .por-con h3 {
+    display: none;
+  }
+  #portfolio .por-con .move {
+    display: none;
+  }
+  #about .about-con .xinxi {
+    width: 100%;
+  }
+  #about .about-con .ziwo {
+    display: none;
+  }
+  #portfolio .por-con .pc {
+    margin-top: 0;
+  }
+  #skill .skill-con .diannao .lunbo .bo .content1 .lun-list a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 81%;
+    height: 53%;
+    transform: scale(1);
+    transition: all 0.3s ease-out;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #about .about-con .ziwo2 {
+    display: none;
+  }
+  #top {
+    display: none;
+  }
+  #home h3 {
+    margin-top: 2rem;
+    text-shadow: -0.15rem 0.30rem 0.7rem #c2c2c2;
+  }
+  #home p {
+    text-shadow: -0.15rem 0.30rem 0.7rem #c2c2c2;
+  }
+  #home .photo {
+    display: none;
+  }
+}

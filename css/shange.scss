@@ -1,0 +1,70 @@
+$lgwidth:1200px;
+$mdwidth:992px;
+$smwidth:768px;
+$padding:15px;
+$margin:15px;
+$count:12;
+$type:lg md sm xs;
+@mixin every($nth-tyle){
+    .container{
+        height:auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin:{
+           left:auto;
+           right:auto;
+        }
+        padding:{
+            left:$padding;
+            right:$padding;
+        }
+        .row{
+            height:auto;
+            box-sizing:border-box;
+            overflow:hidden;
+            margin:{
+                left: -$margin;
+                right:-$margin;
+            }
+            @for $i from  1 through 12{
+               .col-#{$nth-tyle}-#{$i}{
+                    float: left;
+                    height: 100%;
+                    box-sizing: border-box;
+                    width: percentage(1/12)*$i;
+                    padding:{
+                        left:$padding;
+                        right:$padding;
+                    }   
+                }
+                .col-#{$nth-tyle}-offset-#{$i}{
+                    margin-left: percentage(1/12)*$i;
+                }
+                .col-#{$nth-tyle}-push-#{$i}{
+                    left: percentage(1/12)*$i;
+                }
+                .col-#{$nth-tyle}-pull-#{$i}{
+                    right: percentage(1/12)*$i;
+                }
+            }
+            .col-#{$nth-tyle}-hidden{
+                        display: none;
+            }
+        }
+    }
+    .container-fluid{
+        width: 100%;
+    }
+}
+@media  screen and (min-width: 1200px){
+    @include every(nth($type,1));
+}
+@media  screen and (min-width: 992px) and (min-width: 1200px){
+    @include every(nth($type,2));
+}
+@media  screen and (min-width: 768px) and (min-width: 992px){
+    @include every(nth($type,3));
+}
+@media  screen and (max-width: 768px){
+    @include every(nth($type,4));
+}
