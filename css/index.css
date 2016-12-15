@@ -25,6 +25,7 @@
 
 dl, menu, ol, ul {
   margin: 0;
+  padding: 0;
 }
 
 h2, h4 {
@@ -531,6 +532,7 @@ a {
   transform: translateY(0);
   transform: translateX(0);
   opacity: 1;
+  padding: 0;
 }
 
 #skill .skill-con .diannao .lunbo .active5 {
@@ -571,6 +573,7 @@ a {
   width: 80%;
   height: 100%;
   margin: 0 auto;
+  
 }
 
 #portfolio .por-con .por-til {
@@ -698,7 +701,14 @@ a {
 #more .portfolio {
   background: #F4F4F4;
 }
-
+#filters {
+    margin: 1%;
+    padding: 0;
+    list-style: none;
+    margin-top:1.5rem;
+    position: relative;
+    z-index: 99999;
+}
 #more .portfolioContainer {
   padding: 20px;
 }
@@ -1005,7 +1015,9 @@ a {
     transform: translateY(-0.2rem);
   }
 }
-
+@media screen and (min-width: 320px){
+	
+}
 @media screen and (max-width: 750px) {
   #contact .con-con {
     width: 100%;
@@ -1033,7 +1045,6 @@ a {
   }
   #top {
     display: block;
-    background: #000000;
   }
   #home .banner {
     display: none;
@@ -1048,7 +1059,6 @@ a {
     width: 95%;
   }
   #skill .skill-con .diannao {
-    margin-left: -5px;
     margin-top: 50px;
     width: 370px;
     background-size: contain;
@@ -1107,6 +1117,15 @@ a {
     transform: scale(1);
     transition: all 0.3s ease-out;
   }
+  #filters li span {
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+   }
 }
 
 @media screen and (min-width: 960px) {
